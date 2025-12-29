@@ -16,6 +16,6 @@ function Student()
 }
 
 // Creating Object
-var s1 = new Student("Eshwar", 22, "Mathematics");
+let s1 = new Student("Eshwar", 22, "Mathematics");
 // Displaying Output
 document.getElementById("demo").innerHTML = s1.showDetails();
