@@ -1,21 +1,20 @@
-function Student()
+// Defining Class
+class Student 
 {
-    constructor(name, age, course)    // Parameterized Constructor
+    constructor(name, age, course)
     {
         this.name = name;
         this.age = age;
         this.course = course;
     }
 
-    // Method
-    showDetails()  
+    showDetails()
     {
-        return `Name: ${this.name}, Age: ${this.age}, Course: ${this.course}`;
-        
+        return `Name: ${this.name}, Age: ${this.age}, course: ${this.course}`;
     }
 }
 
 // Creating Object
-let s1 = new Student("Eshwar", 22, "Mathematics");
-// Displaying Output
+let s1 = new Student("Eshwar", 22, "Full Stack Development");
+// Displaying Output on HTML Page
 document.getElementById("demo").innerHTML = s1.showDetails();
