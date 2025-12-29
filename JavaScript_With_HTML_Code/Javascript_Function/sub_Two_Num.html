@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtract Two Numbers</title>
+</head>
+<body>
+    <script>
+        function subTwoNum()
+        {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var sub = n1 - n2;
+            document.getElementById("result").innerHTML=sub;
+        }
+    </script>
+
+    <input type="text" placeholder="First value" id="num1">
+    <input type="text" placeholder="Second value" id="num2">
+    <button onclick="subTwoNum()">Subtraction</button>
+    <p id="result"></p>
+</body>
+</html>

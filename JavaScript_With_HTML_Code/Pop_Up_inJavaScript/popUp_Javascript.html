@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up boxes using JavaScript and HTML</title>
+</head>
+<body>
+    
+<script type="text/javascript">
+
+// Alert Box
+alert("This is an Alert Box!");
+
+
+// Confirm Box
+var userResponse = confirm("Do you want to proceed?");
+if(userResponse) {
+    document.write("User chose to proceed.<br>");
+} else {
+    document.write("User canceled the action.<br>");
+}
+
+
+// Prompt Box
+var userName = prompt("Please enter your name:", "Guest");
+document.write("Hello, " + userName + "!");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript function with HTML </title>
+</head>
+<body>
+    <script>
+        function myColor(){
+            document.bgColor="yellow";
+        }
+
+        function myWebsite(){
+        open("https://www.youtube.com/watch?v=lIId8IDP6TU");
+        }
+
+        function add(a, b){
+            var sum = a + b;
+            document.write("The sum of " + a + " and " + b + " is: " + sum + "<br>");
+        }
+    </script>
+
+    <button onclick="myColor()">Click to change background color</button>
+    <br><br>
+    <button onclick="myWebsite()">Click to open YouTube video</button>
+    <br><br>
+    <button onclick="add(5, 10)">Click to add 5 and 10</button>
+
+</body>
+</html>

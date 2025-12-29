@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Result</title>
+    <style>
+        body{
+            margin: 1;
+            padding: 1;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            background-color: darkgreen;
+            color: white;
+        }
+        form{
+            text-align: center;
+            margin-top: 50px;
+        }
+        input{
+            height: 0.5cm;
+            width: 1.5cm;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        button{
+            height: 0.7cm;
+            width: 3cm;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .demo{
+            text-align: center;
+            color: darkblue;
+            background-color: lightgray;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Check Your Result Status</h1>
+    <form action="">
+        English: <input type="text" id="english">
+        Math: <input type="text" id="math">
+        Science: <input type="text" id="science">
+        Kannada: <input type="text" id="kannada">
+        Social: <input type="text" id="social">
+        Hindi: <input type="text" id="hindi">
+        <button type="button" onclick="findResult()">Find Result</button>
+        <br><br>
+        <h1 id="demo" class="demo"></h1>
+        <br>
+        <h1 id="demo1" class="demo"></h1>
+        <br>    
+        <h1 id="demo2" class="demo"></h1>
+
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>
