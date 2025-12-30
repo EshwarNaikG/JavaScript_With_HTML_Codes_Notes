@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rightangle Triangle Star pattern</title>
+</head>
+<body>
+    <script>
+        function right_Angle()
+        {
+            var rows = document.getElementById("rows").value;
+            for(var i=1; i<=rows; i++)
+            {
+                for(var j=1; j<=i; j++)
+                {
+                    document.getElementById("output").innerHTML += "* ";
+                }
+                document.getElementById("output").innerHTML += "<br>";
+            }
+        }
+    </script>
+
+
+    <h1>Right angle Triangle star pattern</h1>
+    <input type="text" id="rows" placeholder="Enter number of rows">
+    <button type="button" onclick="right_Angle()">pattern</button>
+    <h2 id="output"></h2>
+</body>
+</html>

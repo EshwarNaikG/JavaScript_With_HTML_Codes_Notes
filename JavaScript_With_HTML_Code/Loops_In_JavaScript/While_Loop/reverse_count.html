@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Count</title>
+</head>
+<body>
+    <script>
+    function reverse_Count()
+    {
+        var num = document.getElementById("value1").value;
+
+        var i = num;
+        while(i >= 0)
+        {
+            document.getElementById("output").innerHTML += i + "<br>";
+            i--;
+        }
+    }
+    function clearOutput()
+    {
+        document.getElementById("output").innerHTML = "";
+    }
+    </script>
+
+    <h1>Reverse Count for user input numbers in While Loop</h1>
+    <input type="text" id="value1" placeholder="Enter a number">
+    <button type="button" onclick="reverse_Count()">Count Down</button>
+    <button type="button" onclick="clearOutput()">Clear</button>
+    <h2 id="output"></h2>
+</body>
+</html>
