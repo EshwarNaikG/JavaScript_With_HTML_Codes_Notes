@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Pattern using User Input</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Star Pattern Generator</h2>
+
+    <label>Enter number of rows:</label><br>
+    <input type="number" id="rows" placeholder="Enter rows"><br>
+
+    <button onclick="generatePattern()">Generate Pattern</button>
+
+    <pre id="output"></pre>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
