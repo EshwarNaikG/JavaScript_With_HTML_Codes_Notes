@@ -5,3 +5,6 @@ function multiplyTwoNum()
     var mult = num1 * num2;
     document.getElementById("result").innerHTML = mult;
 }
+
+a = document.getElementById("demo");
+a.style.color = "red";
